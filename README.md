@@ -1,4 +1,4 @@
-### Estou usando nodejs: 
+### Node usado: 
 `20.18.0`
 
 <br>
@@ -20,6 +20,10 @@ npx cypress run
 npx cypress open
 ```
 <br>
+
+### Api do Trello usado para os testes
+`https://developer.atlassian.com/cloud/trello/rest/api-group-actions/#api-actions-id-get`
+
 
 ### Observações
 <br>
