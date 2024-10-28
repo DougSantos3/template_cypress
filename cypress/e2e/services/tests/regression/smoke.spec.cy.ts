@@ -1,6 +1,6 @@
-import { createBoard, deleteBoard } from '../requests/board_requests'
-import { createList } from '../requests/list_requests'
-import { createCard, deleteCard, getCard } from '../requests/card_requests'
+import { createBoard, deleteBoard } from '../../requests/board_requests'
+import { createList } from '../../requests/list_requests'
+import { createCard, deleteCard, getCard } from '../../requests/card_requests'
 
 describe('Trello API Tests', () => {
   let boardId: string

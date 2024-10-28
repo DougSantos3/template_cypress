@@ -1,5 +1,5 @@
-import { boardsSchema } from '../contracts/boardSchema'
-import { getBoards, updateBoardName } from '../requests/board_requests'
+import { boardsSchema } from '../../contracts/boardSchema'
+import { getBoards, updateBoardName } from '../../requests/board_requests'
 
 const fields = { fields: "name" }
 const boardId = Cypress.env('boardId')
