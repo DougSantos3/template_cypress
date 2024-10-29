@@ -5,7 +5,9 @@
   "main": "cypress.config.js",
  "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "test:api": "npx cypress run --spec './cypress/e2e/services/tests/**/*.cy.ts'",
+    "test:ui": "npx cypress run --spec './cypress/e2e/ui/tests/*.cy.ts'"
   },
   "keywords": [],
   "author": "Douglas Martins Santos",
