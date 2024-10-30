@@ -1,5 +1,3 @@
-// cypress/support/trelloApi.ts
-
 const apiKey = Cypress.env('API_KEY')
 const apiToken = Cypress.env('API_TOKEN')
 
