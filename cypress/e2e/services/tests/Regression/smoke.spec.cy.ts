@@ -1,5 +1,5 @@
 import { createBoard, deleteBoard } from '../board_requests'
-import { createList } from '../list_requests'
+import { createList } from '../../requests/Lists'
 import { createCard, deleteCard, getCard } from '../card_requests'
 
 describe('Trello API Tests', () => {
