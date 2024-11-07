@@ -1,6 +1,3 @@
-const apiKey = Cypress.env('API_KEY')
-const apiToken = Cypress.env('API_TOKEN')
-
 const getBoardMemberships = (boardId: string) => {
   const url = `https://api.trello.com/1/boards/${boardId}/memberships`
   return cy.request({
@@ -246,7 +243,6 @@ const updateShowSidebarActivity = (boardId: string, value: boolean) => {
   }).then(response => response)
 }
 
-// PUT request to update showSidebarBoardActions preference
 const updateShowSidebarBoardActions = (boardId: string, value: boolean) => {
   const url = `https://api.trello.com/1/boards/${boardId}/myPrefs/showSidebarBoardActions`
   return cy.request({
@@ -256,7 +252,6 @@ const updateShowSidebarBoardActions = (boardId: string, value: boolean) => {
   }).then(response => response)
 }
 
-// PUT request to update showSidebarMembers preference
 const updateShowSidebarMembers = (boardId: string, value: boolean) => {
   const url = `https://api.trello.com/1/boards/${boardId}/myPrefs/showSidebarMembers`
   return cy.request({
@@ -266,7 +261,6 @@ const updateShowSidebarMembers = (boardId: string, value: boolean) => {
   }).then(response => response)
 }
 
-// POST request to create a new board
 const createBoard = (name: string) => {
   const url = `https://api.trello.com/1/boards/`
   return cy.request({
@@ -276,7 +270,6 @@ const createBoard = (name: string) => {
   }).then(response => response)
 }
 
-// POST request to generate calendar key
 const generateCalendarKey = (boardId: string) => {
   const url = `https://api.trello.com/1/boards/${boardId}/calendarKey/generate`
   return cy.request({
@@ -286,7 +279,6 @@ const generateCalendarKey = (boardId: string) => {
   }).then(response => response)
 }
 
-// POST request to generate email key
 const generateEmailKey = (boardId: string) => {
   const url = `https://api.trello.com/1/boards/${boardId}/emailKey/generate`
   return cy.request({
@@ -296,7 +288,6 @@ const generateEmailKey = (boardId: string) => {
   }).then(response => response)
 }
 
-// POST request to add a tag to a board
 const addTagToBoard = (boardId: string, tagId: string) => {
   const url = `https://api.trello.com/1/boards/${boardId}/idTags`
   return cy.request({
@@ -306,7 +297,6 @@ const addTagToBoard = (boardId: string, tagId: string) => {
   }).then(response => response)
 }
 
-// POST request to mark a board as viewed
 const markBoardAsViewed = (boardId: string) => {
   const url = `https://api.trello.com/1/boards/${boardId}/markedAsViewed`
   return cy.request({
@@ -316,7 +306,6 @@ const markBoardAsViewed = (boardId: string) => {
   }).then(response => response)
 }
 
-// GET request to retrieve board plugins
 const getBoardPlugins = (boardId: string) => {
   const url = `https://api.trello.com/1/boards/${boardId}/boardPlugins`
   return cy.request({
@@ -327,7 +316,6 @@ const getBoardPlugins = (boardId: string) => {
   }).then(response => response)
 }
 
-// GET request to retrieve plugins associated with a board
 const getPlugins = (boardId: string) => {
   const url = `https://api.trello.com/1/boards/${boardId}/plugins`
   return cy.request({
