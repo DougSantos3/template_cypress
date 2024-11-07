@@ -1,4 +1,3 @@
-// Função para criar um novo card no Trello
 export function createCard(idList: string) {
     return cy.request({
         method: 'POST',
@@ -9,7 +8,6 @@ export function createCard(idList: string) {
     })
 }
 
-// Função para obter detalhes de um card específico
 export function getCard(id: string) {
     return cy.request({
         method: 'GET',
@@ -20,7 +18,6 @@ export function getCard(id: string) {
     })
 }
 
-// Função para atualizar um card específico
 export function updateCard(id: string, data: object) {
     return cy.request({
         method: 'PUT',
@@ -32,7 +29,6 @@ export function updateCard(id: string, data: object) {
     })
 }
 
-// Função para deletar um card específico
 export function deleteCard(id: string) {
     return cy.request({
         method: 'DELETE',
@@ -40,7 +36,6 @@ export function deleteCard(id: string) {
     })
 }
 
-// Função para obter um campo específico de um card
 export function getCardField(id: string, field: string) {
     return cy.request({
         method: 'GET',
@@ -51,7 +46,6 @@ export function getCardField(id: string, field: string) {
     })
 }
 
-// Função para obter as ações de um card
 export function getCardActions(id: string) {
     return cy.request({
         method: 'GET',
@@ -62,7 +56,6 @@ export function getCardActions(id: string) {
     })
 }
 
-// Função para obter os anexos de um card
 export function getCardAttachments(id: string) {
     return cy.request({
         method: 'GET',
@@ -73,7 +66,6 @@ export function getCardAttachments(id: string) {
     })
 }
 
-// Função para adicionar um anexo a um card
 export function addAttachmentToCard(id: string) {
     return cy.request({
         method: 'POST',
@@ -84,7 +76,6 @@ export function addAttachmentToCard(id: string) {
     })
 }
 
-// Função para obter um anexo de um card
 export function getAttachment(id: string, idAttachment: string) {
     return cy.request({
         method: 'GET',
@@ -95,7 +86,6 @@ export function getAttachment(id: string, idAttachment: string) {
     })
 }
 
-// Função para deletar um anexo de um card
 export function deleteAttachment(id: string, idAttachment: string) {
     return cy.request({
         method: 'DELETE',
@@ -103,7 +93,6 @@ export function deleteAttachment(id: string, idAttachment: string) {
     })
 }
 
-// Função para obter o quadro de um card
 export function getBoardFromCard(id: string) {
     return cy.request({
         method: 'GET',
@@ -114,7 +103,6 @@ export function getBoardFromCard(id: string) {
     })
 }
 
-// Função para obter os estados de itens de checklists de um card
 export function getCheckItemStates(id: string) {
     return cy.request({
         method: 'GET',
@@ -125,7 +113,6 @@ export function getCheckItemStates(id: string) {
     })
 }
 
-// Função para obter as listas de checklists de um card
 export function getChecklistsFromCard(id: string) {
     return cy.request({
         method: 'GET',
@@ -136,7 +123,6 @@ export function getChecklistsFromCard(id: string) {
     })
 }
 
-// Função para criar uma checklist em um card
 export function createChecklistForCard(id: string) {
     return cy.request({
         method: 'POST',
@@ -147,7 +133,6 @@ export function createChecklistForCard(id: string) {
     })
 }
 
-// Função para obter um item específico de uma checklist
 export function getCheckItem(id: string, idCheckItem: string) {
     return cy.request({
         method: 'GET',
@@ -158,7 +143,6 @@ export function getCheckItem(id: string, idCheckItem: string) {
     })
 }
 
-// Função para atualizar um item de checklist
 export function updateCheckItem(id: string, idCheckItem: string, data: object) {
     return cy.request({
         method: 'PUT',
@@ -170,7 +154,6 @@ export function updateCheckItem(id: string, idCheckItem: string, data: object) {
     })
 }
 
-// Função para deletar um item de checklist
 export function deleteCheckItem(id: string, idCheckItem: string) {
     return cy.request({
         method: 'DELETE',
@@ -178,7 +161,6 @@ export function deleteCheckItem(id: string, idCheckItem: string) {
     })
 }
 
-// Função para obter a lista de um card
 export function getListFromCard(id: string) {
     return cy.request({
         method: 'GET',
@@ -189,7 +171,6 @@ export function getListFromCard(id: string) {
     })
 }
 
-// Função para obter os membros de um card
 export function getMembersFromCard(id: string) {
     return cy.request({
         method: 'GET',
@@ -200,7 +181,6 @@ export function getMembersFromCard(id: string) {
     })
 }
 
-// Função para obter os membros que votaram em um card
 export function getMembersVoted(id: string) {
     return cy.request({
         method: 'GET',
@@ -211,7 +191,6 @@ export function getMembersVoted(id: string) {
     })
 }
 
-// Função para adicionar um membro que votou em um card
 export function addMemberVoted(id: string, memberId: string) {
     return cy.request({
         method: 'POST',
@@ -222,7 +201,6 @@ export function addMemberVoted(id: string, memberId: string) {
     })
 }
 
-// Função para obter dados do plugin de um card
 export function getPluginDataFromCard(id: string) {
     return cy.request({
         method: 'GET',
@@ -233,7 +211,6 @@ export function getPluginDataFromCard(id: string) {
     })
 }
 
-// Função para obter os stickers de um card
 export function getStickersFromCard(id: string) {
     return cy.request({
         method: 'GET',
@@ -244,7 +221,6 @@ export function getStickersFromCard(id: string) {
     })
 }
 
-// Função para adicionar um sticker a um card
 export function addStickerToCard(id: string, image: string, top: number, left: number, zIndex: number) {
     return cy.request({
         method: 'POST',
@@ -255,7 +231,6 @@ export function addStickerToCard(id: string, image: string, top: number, left: n
     })
 }
 
-// Função para obter um sticker de um card
 export function getStickerFromCard(id: string, idSticker: string) {
     return cy.request({
         method: 'GET',
@@ -266,7 +241,6 @@ export function getStickerFromCard(id: string, idSticker: string) {
     })
 }
 
-// Função para atualizar um sticker de um card
 export function updateStickerFromCard(id: string, idSticker: string, top: number, left: number, zIndex: number) {
     return cy.request({
         method: 'PUT',
@@ -277,7 +251,6 @@ export function updateStickerFromCard(id: string, idSticker: string, top: number
     })
 }
 
-// Função para deletar um sticker de um card
 export function deleteStickerFromCard(id: string, idSticker: string) {
     return cy.request({
         method: 'DELETE',
@@ -286,7 +259,6 @@ export function deleteStickerFromCard(id: string, idSticker: string) {
 }
 
 
-// PUT: Add a comment to an action
 cy.request({
     method: 'PUT',
     url: `https://api.trello.com/1/cards/{id}/actions/{idAction}/comments?text={text}&key=APIKey&token=APIToken`,
@@ -295,13 +267,11 @@ cy.request({
     },
 })
 
-// DELETE: Delete a comment from an action
 cy.request({
     method: 'DELETE',
     url: `https://api.trello.com/1/cards/{id}/actions/{idAction}/comments?key=APIKey&token=APIToken`,
 })
 
-// PUT: Update a custom field item for a card
 cy.request({
     method: 'PUT',
     url: `https://api.trello.com/1/cards/{idCard}/customField/{idCustomField}/item?key=APIKey&token=APIToken`,
@@ -318,7 +288,6 @@ cy.request({
     },
 })
 
-// PUT: Update multiple custom fields for a card
 cy.request({
     method: 'PUT',
     url: `https://api.trello.com/1/cards/{idCard}/customFields?key=APIKey&token=APIToken`,
@@ -341,7 +310,6 @@ cy.request({
     },
 })
 
-// GET: Get custom field items for a card
 cy.request({
     method: 'GET',
     url: `https://api.trello.com/1/cards/{id}/customFieldItems?key=APIKey&token=APIToken`,
@@ -350,7 +318,6 @@ cy.request({
     },
 })
 
-// POST: Add a comment to a card action
 cy.request({
     method: 'POST',
     url: `https://api.trello.com/1/cards/{id}/actions/comments?text={text}&key=APIKey&token=APIToken`,
@@ -359,49 +326,41 @@ cy.request({
     },
 })
 
-// POST: Add a label to a card
 cy.request({
     method: 'POST',
     url: `https://api.trello.com/1/cards/{id}/idLabels?key=APIKey&token=APIToken`,
 })
 
-// POST: Add a member to a card
 cy.request({
     method: 'POST',
     url: `https://api.trello.com/1/cards/{id}/idMembers?key=APIKey&token=APIToken`,
 })
 
-// POST: Add a label with color to a card
 cy.request({
     method: 'POST',
     url: `https://api.trello.com/1/cards/{id}/labels?color={color}&key=APIKey&token=APIToken`,
 })
 
-// POST: Mark associated notifications as read
 cy.request({
     method: 'POST',
     url: `https://api.trello.com/1/cards/{id}/markAssociatedNotificationsRead?key=APIKey&token=APIToken`,
 })
 
-// DELETE: Remove a label from a card
 cy.request({
     method: 'DELETE',
     url: `https://api.trello.com/1/cards/{id}/idLabels/{idLabel}?key=APIKey&token=APIToken`,
 })
 
-// DELETE: Remove a member from a card
 cy.request({
     method: 'DELETE',
     url: `https://api.trello.com/1/cards/{id}/idMembers/{idMember}?key=APIKey&token=APIToken`,
 })
 
-// DELETE: Remove a member's vote from a card
 cy.request({
     method: 'DELETE',
     url: `https://api.trello.com/1/cards/{id}/membersVoted/{idMember}?key=APIKey&token=APIToken`,
 })
 
-// PUT: Mark a checklist item as checked
 cy.request({
     method: 'PUT',
     url: `https://api.trello.com/1/cards/{idCard}/checklist/{idChecklist}/checkItem/{idCheckItem}?key=APIKey&token=APIToken`,
@@ -410,7 +369,6 @@ cy.request({
     },
 })
 
-// DELETE: Delete a checklist from a card
 cy.request({
     method: 'DELETE',
     url: `https://api.trello.com/1/cards/{id}/checklists/{idChecklist}?key=APIKey&token=APIToken`,
