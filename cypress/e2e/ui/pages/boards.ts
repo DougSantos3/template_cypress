@@ -1,3 +1,4 @@
+// Locator
 export const cookieAccept = () => cy.get('//span[contains(text(), "Continuar")]')
 
 /*Não recomendo o xpath com caminho completo, se tivesse acesso ao codigo do 

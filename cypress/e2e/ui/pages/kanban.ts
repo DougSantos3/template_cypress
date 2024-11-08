@@ -1,3 +1,4 @@
+// Locator
 export const addList = () => cy.get('button[data-testid="list-composer-button"]')
 export const enterListName = () => cy.get('textarea[data-testid="list-name-textarea"]')
 export const addCard = () => cy.get('button[data-testid="list-add-card-button"]')
