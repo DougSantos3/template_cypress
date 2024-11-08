@@ -1,3 +1,5 @@
+/* Comandos customizados */
+
 Cypress.Commands.add('insert', (name, age, designation, salary) => {
   cy.runSQL(`INSERT INTO example_table(name, age, designation, salary) VALUES ('${name}', ${age}, '${designation}', ${salary});`)
 })

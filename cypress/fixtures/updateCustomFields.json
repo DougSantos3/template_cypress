@@ -1,6 +1,8 @@
 {
   "customFieldItems": [
     {
+      "_explanation": "Dados estatico que vai ser usado dentro dos testes",
+      "_explanation2": "mockar respostas do backend",
       "idCustomField": "Some id custom field",
       "value": {
         "text": "Some Text",

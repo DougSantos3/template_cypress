@@ -1,3 +1,5 @@
+/* Comandos customizados */
+
 Cypress.Commands.add('interceptBoardsForbidden', () => {
   cy.intercept('GET', '/1/members/me/boards', {
     statusCode: 403,
